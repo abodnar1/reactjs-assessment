@@ -49,6 +49,11 @@
       padding: 0 20px;
     }
 
+    &-img {
+      height: 100px;
+      padding-bottom: 20px;
+    }
+
     &-info {
       padding: 20px 20px 0 20px;
     }
@@ -86,6 +91,10 @@
 
   &__img {
     width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateY(-50%);
     @extend %shadow-sm;
 
     @media #{$lg} {
