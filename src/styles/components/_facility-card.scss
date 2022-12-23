@@ -142,5 +142,14 @@
     text-align: center;
     width: 50px;
     @extend %shadow;
+
+    @media #{$sm} {
+      height: 40px;
+      width: 40px;  
+      line-height: 40px;
+      font-size: 1.2rem;
+      bottom: -8%;
+      left: 41%
+    }
   }
 }
