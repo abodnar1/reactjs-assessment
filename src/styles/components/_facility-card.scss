@@ -149,7 +149,13 @@
       line-height: 40px;
       font-size: 1.2rem;
       bottom: -8%;
-      left: 41%
+      left: 38%
+    }
+
+    @media #{$xs} {
+      font-size: 1.1rem;
+      bottom: -6%;
+      left: 36%;
     }
   }
 }
