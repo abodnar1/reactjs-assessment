@@ -132,13 +132,13 @@
   &__new {
     background: $yellow-green-50;
     border-radius: 50%;
-    bottom: 0;
+    position: absolute;
+    bottom: 67%;
+    left: 72%;
     display: inline-block;
     height: 50px;
     line-height: 50px;
     margin-bottom: 0;
-    position: absolute;
-    right: 0;
     text-align: center;
     width: 50px;
     @extend %shadow;

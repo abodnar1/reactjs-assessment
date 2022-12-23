@@ -11,11 +11,16 @@ const propTypes = {
 
 const FacilityImage = props => {
   const { image, name, opened } = props;
+  // console.log("Opened State:", opened)
   const [isNew, setIsNew] = useState(false);
+  // console.log("Is New State: ", isNew);
 
   useEffect(() => {
-    const recentlyOpened = !nineMonthsPassed(opened);
+    const recentlyOpened = nineMonthsPassed(opened);
+    //const recentlyOpened = !nineMonthsPassed(opened);
+    // removed ! from line above to trigger the New label
     setIsNew(recentlyOpened);
+    // console.log("Recently Opened: ", recentlyOpened);
   }, []);
 
   return (
