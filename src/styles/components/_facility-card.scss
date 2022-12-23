@@ -56,6 +56,10 @@
       @media #{$md} {
         height: 120px;
       }
+
+      @media #{$sm} {
+        margin-top: 20px;
+      }
     }
 
     &-info {
@@ -115,6 +119,7 @@
       flex-shrink: 1;
       height: 125px;
       width: 125px;
+      transform: none;
     }
   }
 
