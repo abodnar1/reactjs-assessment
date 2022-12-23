@@ -52,6 +52,10 @@
     &-img {
       height: 100px;
       padding-bottom: 20px;
+
+      @media #{$md} {
+        height: 120px;
+      }
     }
 
     &-info {
