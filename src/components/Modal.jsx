@@ -5,6 +5,10 @@ import Portal from "./Portal";
 
 const Modal = props => {
   const { clearAmenities, list, name } = props;
+  
+  const capitalizeAmenity = amenity => {
+    return amenity.charAt(0).toUpperCase()+ amenity.slice(1);
+  };
 
   return (
     <Portal>
@@ -35,7 +39,7 @@ const Modal = props => {
             <div className="modal-body">
               <p className="modal__amenities-label">Amenities</p>
               <ul>
-                {list !== undefined && list.map((amenity, i) => <li key={i}>{amenity}</li>)}
+                {list !== undefined && list.map((amenity, i) => <li key={i}>{capitalizeAmenity(amenity)}</li>)}
               </ul>
             </div>
             <div className="modal-footer">
