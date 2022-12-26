@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { pickedLocation } from "../actions/facilityActions";
 
 const LocationSelect = props => {
-  const { locations } = props;
+  const { pickedLocation, locations } = props;
 
   useEffect(() => {}, [locations]);
 
@@ -44,6 +44,11 @@ const mapStateToProps = state => ({
   locations: state.facilities.list.locations
 });
 
+const mapDispatchToProps = dispatch => ({
+  pickedLocation: str => dispatch(pickedLocation(str))
+});
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps,
 )(LocationSelect);
