@@ -28,6 +28,7 @@
     margin-top: 100px;
 
     &-top {
+      display: flex;
       padding: 50px 0 25px 0;
 
       @media #{$sm} {
@@ -51,7 +52,7 @@
   }
 
   &__faq {
-    flex-basis: 30%;
+    flex-basis: 100%;
     padding: 0 20px;
 
     @media #{$sm} {
