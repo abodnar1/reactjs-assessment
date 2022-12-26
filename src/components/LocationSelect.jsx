@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { pickedLocation } from "../actions/facilityActions";
 
 const LocationSelect = props => {
+  const { locations } = props;
+
   useEffect(() => {}, [props.locations]);
 
     return (
@@ -15,9 +17,20 @@ const LocationSelect = props => {
             id="location-selector"
             className="location-select__select"
           >
-            <option className="location-select__option" value="all">
-              View All
+            <option 
+              className="location-select__option" 
+              value="all">
+                View All
             </option>
+            {locations !== undefined && locations.map(location => 
+              <option 
+                className="location-select__option" 
+                key={location.id} 
+                value={location.name}
+              >
+                View {location.name}
+              </option>
+            )}
           </select>
         </nav>
       </div>
@@ -27,7 +40,7 @@ const LocationSelect = props => {
 };
 
 const mapStateToProps = state => ({
-  locations: null
+  locations: state.facilities.list.locations
 });
 
 export default connect(
