@@ -34,7 +34,9 @@ const Modal = props => {
             </div>
             <div className="modal-body">
               <p className="modal__amenities-label">Amenities</p>
-
+              <ul>
+                {list !== undefined && list.map((amenity, i) => <li key={i}>{amenity}</li>)}
+              </ul>
             </div>
             <div className="modal-footer">
               <button
