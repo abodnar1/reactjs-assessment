@@ -5,7 +5,7 @@ import { pickedLocation } from "../actions/facilityActions";
 const LocationSelect = props => {
   const { locations } = props;
 
-  useEffect(() => {}, [props.locations]);
+  useEffect(() => {}, [locations]);
 
     return (
       <div className="container">
@@ -16,6 +16,7 @@ const LocationSelect = props => {
           <select
             id="location-selector"
             className="location-select__select"
+            onChange={(e) => pickedLocation(e.target.value)}
           >
             <option 
               className="location-select__option" 
@@ -26,7 +27,7 @@ const LocationSelect = props => {
               <option 
                 className="location-select__option" 
                 key={location.id} 
-                value={location.name}
+                value={location.id}
               >
                 View {location.name}
               </option>
