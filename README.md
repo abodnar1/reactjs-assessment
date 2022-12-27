@@ -59,5 +59,6 @@ The assessment took me approx. 12 hours split between 3 days to complete.
 - I followed an Agile workflow.
 - I created branches for each required task and utilized a pull request template to summarize changes made. 
 - In the PR titled `Feature/css new label styling #7`, I made an additional comment regarding the "New" tag on facility images and provided screenshots of its styling.
+- Error handling could be added so the user knows when the data fails to fetch or takes a long time to load.
 - Overall, this was a really fun assessment and it introduced me to three new technologies I haven't worked with before. I look forward to reviewing the work with the hiring team.
 
