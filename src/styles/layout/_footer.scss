@@ -20,6 +20,8 @@
 
     & h3 {
       margin-top: 10px;
+      font-size: $font-md;
+      font-weight: $weight-bold;
     }
   }
 
@@ -28,6 +30,7 @@
     margin-top: 100px;
 
     &-top {
+      display: flex;
       padding: 50px 0 25px 0;
 
       @media #{$sm} {
@@ -51,7 +54,7 @@
   }
 
   &__faq {
-    flex-basis: 30%;
+    flex-basis: 100%;
     padding: 0 20px;
 
     @media #{$sm} {
@@ -60,6 +63,10 @@
 
     & p {
       margin-bottom: 20px;
+    }
+
+    & h3 {
+      font-weight: $weight-semi-bold;
     }
   }
 }
