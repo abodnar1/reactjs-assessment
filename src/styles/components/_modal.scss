@@ -10,6 +10,7 @@
   }
 
   &__container {
+    border-radius: 8px;
     @extend %shadow-lg;
   }
 }
