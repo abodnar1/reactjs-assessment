@@ -3,13 +3,26 @@
     background-color: $white-70;
     border-color: $white-70;
     border-radius: 4px;
+    padding: 8px;
+    width: 4.5em;
   }
 
   &__close {
+    color: $white-70;
     opacity: 1;
   }
 
   &__container {
+    border-radius: 8px;
     @extend %shadow-lg;
+  }
+
+  &__title {
+    padding: 10px;
+  }
+
+  &__amenities-label {
+    margin: 0;
+    padding: 10px;
   }
 }
