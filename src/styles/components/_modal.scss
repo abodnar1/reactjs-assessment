@@ -14,4 +14,13 @@
     border-radius: 8px;
     @extend %shadow-lg;
   }
+
+  &__title {
+    padding: 10px;
+  }
+
+  &__amenities-label {
+    margin: 0;
+    padding: 10px;
+  }
 }
